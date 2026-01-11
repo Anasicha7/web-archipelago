@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Archipelago Coffee</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -16,8 +17,8 @@
     <!-- Nav -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="" class="nav__logo">
-                <img src="assets/img/logo.png" alt="logo">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="logo" class="nav__logo">
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -58,131 +59,144 @@
     
 <main class="app">
     
-    <section class="sec5" data-scene>
+    <section class="contact" id="contact" data-scene>
+        <img src="assets/tes/contact.jpg" alt="banner image" class="contact__img">
+        <div class="contact__shadow"></div>
+
+        <div class="contact__container container grid">
+            <div class="contact__data" data-aos="zoom-out" data-aos-delay="100">
+                <h3 class="contact__subtitle">
+                    Contact <span style="color: red;">Arcipelago </span> Coffee
+                </h3>
+
+                <h1 class="contact__title">
+    
+                </h1>
+
+                <p class="contact__description">
+                If you are interested in our premium coffee products or have any inquiries, <br>
+                feel free to get in touch with us. We value your interest and are here <br> 
+                to provide you with the information you need.
+                </p>
+
+                <p class="contact__quote">
+                To request a quote or discuss your specific requirements, <br>
+                please fill out the form below, and our team will
+                promptly respond to your inquiry.
+                </p>
+
+            </div>
+        </div>
+    </section>
+    
+    <form action="https://formspree.io/f/xqkvrgrz" method="POST" class="sec5" data-scene>
         <div class="wrapper">
             <div class="sec5-inner" data-aos="zoom-out-right">
                 <h2>Contact us</h2>
                 <div class="row100">
                     <div class="col">
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span class="text">First Name</span>
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="fname" placeholder="First Name">
                             <span class="line"></span>
-                        </div>                
-                    </div> 
+                        </div>
+                    </div>
                     <div class="col">
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span class="text">Last Name</span>
+                            <label for="lname">Last name:</label>
+                            <input type="text" id="lname" name="lname" placeholder="Last Name">
                             <span class="line"></span>
-                        </div>                
+                        </div>
                     </div>
                 </div>
                 <div class="row100">
                     <div class="col">
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span class="text">Email</span>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="jhon@email.com">
                             <span class="line"></span>
-                        </div>                
-                    </div> 
+                        </div>
+                    </div>
                     <div class="col">
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span class="text">Mobile</span>
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="subject">
                             <span class="line"></span>
-                        </div>                
+                        </div>
                     </div>
                 </div>
-                    
+    
                 <div class="row100">
                     <div class="col">
                         <div class="inputBox textarea">
-                            <textarea required="required"></textarea>
-                            <span class="text">Type Your Message Here...</span>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" placeholder="Type Your Message Here..."></textarea>
                             <span class="line"></span>
                         </div>
-                    </div>            
+                    </div>
                 </div>
-
+    
                 <div class="row100">
                     <div class="col">
-                        <input type="submit" value="send">
+                        <button type="submit">Send Message</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </form>
+    
 
     <!--=========================================== FOOTER ==============================================-->
     <footer class="footer" data-scene>
-        <div class="footer__container container grid">
+        <div class="footer__left">
+            <img src="assets/img/logo.png" alt="logo" class="logo__img">
+            
+            <p class="footer__description">
+            Find and explore the best<br>
+            coffee beans from<br>
+            all your favorites.
+            </p>
+        </div>
+
+        <div class="footer__data grid">
+            <h3>Contact Us</h3>                   
             <div>
-                <img src="assets/img/logo.png" alt="logo" class="logo__img">
-
-                <p class="footer__description">
-                    Find and explore the best<br>
-                    coffee beans from<br>
-                    all your favorites.
-                </p>
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="footer__info">
+                Sarinah 12th floor<br>
+                Jl. M.H. Thamrin No.11,<br>
+                Jakarta 10350</p>                
             </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <p class="footer__info"><a href="mailto:info@coffeearchipelago.com">
+                info@coffeearchipelago.com
+                </a></p>
+            </div>
+        </div>
 
-            <div class="footer__data grid">
-                <div>
-                    <h3 class="footer__title">Contact</h3>
-
-                    <ul class="footer__links">
-                        <li>
-                            <Address class="footer__info">
-                                Sarinah Building<br>Jl. M.H. Thamrin No.11,<br>
-                                Gondangdia, Kec. Menteng,<br> 
-                                Kota Jakarta Pusat, <br> 
-                                Daerah Khusus Ibukota Jakarta 10350
-                            </Address>
-                        </li>
-
-                        <li>
-                        <Address class="footer__info">
-                            info@coffeearchipelago.com <br>
-                            +62 81282447779
-                        </Address>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">Follow Us</h3>
-
-                    <ul class="footer__social">
-                        <li style="--clr: #ff253f">
-                            <a href="https://www.instagram.com" target="_blank" class="footer__social-link">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li style="--clr: #25d366">
-                            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li style="--clr: #2483ff">
-                            <a href="https://www.linkedin.com/" target="_blank" class="footer__social-link">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="footer__right">
+            <h3 class="footer__title">Follow Us</h3>
+            <div class="footer__social">
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61553727826647"><i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/coffee-archipelago"><i class="fa-brands fa-linkedin"></i>
+                </a>
             </div>
         </div>
     </footer>
 
     <div class="copyright" data-scene>
         <div class="container" data-aos="zoom-out-up" data-aos-offset="0">
-            <p>© 2021 All Coffee | All Rights Reserved</p>
+            <p>© 2024 Coffee Archipelago .All Rights Reserved</p>
         </div>
     </div>
 
 </main>
-
+    
     <script src="assets/js/main.js"></script>
+
 </body>
 </html> 
